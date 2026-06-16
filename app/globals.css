@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { font-family: system-ui, -apple-system, sans-serif; }
+}
+
+@layer components {
+  .card { @apply bg-white border border-gray-200 rounded-xl p-5; }
+  .btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 transition-all cursor-pointer; }
+  .btn-primary { @apply bg-brand-600 text-white border-brand-600 hover:bg-brand-800; }
+  .btn-sm { @apply px-3 py-1.5 text-xs; }
+  .input { @apply w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400; }
+  .label { @apply block text-xs font-medium text-gray-500 mb-1; }
+  .pill { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+}
